@@ -41,8 +41,39 @@ h1{
     background-color: #c7ea1b
 }
 
+.boxes{
+    display: none;
+}
+
 .box{
     border: solid 1px white;
     height: 250px;
     width: 250px;
+    /* Displaying none should be removed */
 }
+
+/*Question Mark Spin */
+@keyframes spin {
+    0% { transform: scale(0) rotate(0deg); opacity: 0; }
+    50% { transform: scale(1) rotate(180deg); opacity: 1; }
+    100% { transform: scale(2) rotate(360deg); opacity: 0; }
+  }
+  
+  .question-mark {
+    position: absolute;
+    display: inline-block;
+    animation: spin 4s linear infinite;
+    transform-origin: center;
+    opacity: 0;
+  }
+  
+  .question-mark:before {
+    content: "?";
+    font-size: 56px;
+  }
+  
+  .yt-iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

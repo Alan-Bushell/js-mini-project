@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/3af9543e24.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
     <!-- Nav Container -->
@@ -24,19 +25,34 @@
 
             <div class="col-md-3">
                 <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-light position-relative">
+                    <button id="open-door-btn" type="button" class="btn btn-light position-relative">
                         Open Door
-                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                            <span class="visually-hidden">Locked</span>
+                        <span class="position-absolute top-0 start-100 locked-span translate-middle p-2 bg-danger border border-light rounded-circle">
+                          <span class="visually-hidden">Locked</span>
                         </span>
-                    </button>
+                      </button>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="container yt-container">
+        <div class="yt-iframe">
+            <!-- YT-iframe -->
+        </div>
+    </div>
+
+    <div class="container" id="question-container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <!--Question Mark Intro-->
+                <div class="question-mark mt-5"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Tile Area -->
-    <div class="container">
+    <div class="container boxes">
         <div class="row text-center g-3">
             <div class="col-md-3 mt-5">
                 <div class="box p-3">Box 1</div>
@@ -95,5 +111,6 @@
             </div>
         </div>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
