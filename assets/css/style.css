@@ -38,3 +38,9 @@ h1{
 .cool-button:hover {
     background-color: #c7ea1b
 }
+
+.box{
+    border: solid 1px white;
+    height: 250px;
+    width: 250px;
+}
