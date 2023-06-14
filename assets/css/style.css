@@ -12,12 +12,14 @@ h1{
     margin-top: 30px;
 }
 
-.fa-circle-info {
+.fa-info-circle {
     font-size: 48px;
+    color: white;
 }
 
-.fa-circle-info:hover {
-    color: white;
+.fa-info-circle:hover {
+    color: black;
+    cursor: pointer;
 }
 
 .cool-button {
