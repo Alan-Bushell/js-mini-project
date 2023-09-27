@@ -16,6 +16,7 @@ function handleButtonClick() {
   if (userCode === '020391') {
     // Remove bg-danger class and start the flashing effect
     toggleColor();
+    openDoorBtn.disabled = true;
 
     // Create and display the YouTube video
     displayYouTubeVideo();
